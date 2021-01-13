@@ -1,0 +1,50 @@
+/* google font name: Fredoka one */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.navbar-brand{
+    margin: 0;
+    margin-right: 20px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    color: rgb(255, 51, 0) !important;
+}
+.nav-first-icon-div{
+    display: none;
+}
+@media only screen and (max-width: 989px) {
+    .nav-first-icon-div{
+        display: block;
+    }
+    .nav-second-icon-div{
+        display: none;
+    }
+    .navbar-bottom{
+        display: none;
+    }
+}
+  
+.nav-first-icon{
+    margin: 10px;
+}
+
+
+.nav-item:first-child{
+    margin-left: 25px;
+}
+
+.nav-item{
+    padding: 5px 15px 5px 8px;
+}
+.nav-link{
+    font-weight: bold;
+}
+
+.search-input{
+    border: 1px solid #C9151B;
+    font-weight: bold;
+}
+.search-icon{
+    background-color: #C9151B;
+    color: #fff;
+    cursor: pointer;
+}
