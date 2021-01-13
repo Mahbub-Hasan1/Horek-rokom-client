@@ -6,11 +6,12 @@ import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import SearchIcon from '@material-ui/icons/Search';
 import Sidebar from '../Sidebar/Sidebar';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light">
+            <nav className="navbar-top navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
                     <h2 className="navbar-brand">HOREK-ROKOM</h2>
 
@@ -24,7 +25,8 @@ const Navbar = () => {
                     <div className="justify-content-end  navbar-collapse" id="navbarNavDropdown">
 
                         <div className="input-group">
-                            <input type="text" className="form-control search-input" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                            <h2 className="sidebar-icon icon-color"><Sidebar /></h2>
+                            <input type="text" className="form-control search-input" placeholder="Search for..." aria-label="Search for..." aria-describedby="basic-addon2" />
                             <span className="input-group-text search-icon" id="basic-addon2"><SearchIcon /></span>
                         </div>
 
@@ -39,7 +41,7 @@ const Navbar = () => {
                             <li className="icon-color nav-item">
                                 <PermIdentityIcon />
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -47,42 +49,42 @@ const Navbar = () => {
 
             {/* Navbar bottom  */}
 
-            <nav className="navbar-bottom navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar-bottom navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
-                    <h2 className="navbar-brand"><Sidebar/></h2>
-                    
+                    <h2 className="sidebar-icon-bottom icon-color"><Sidebar /></h2>
+
                     <div className="justify-content-center">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">All Product</a>
+                                <Link className="nav-link active" aria-current="page" to="/">All Product</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Gift Card</a>
+                                <Link className="nav-link" to="/">Gift Card</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Gift Card</a>
+                                <Link className="nav-link" to="/">Gift Card</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Campaigns</a>
+                                <Link className="nav-link" to="/">Campaigns</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Campaigns</a>
+                                <Link className="nav-link" to="/">Campaigns</Link>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Dropdown link
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                    <li><Link className="dropdown-item" to="/">Action</Link></li>
+                                    <li><Link className="dropdown-item" to="/">Another action</Link></li>
+                                    <li><Link className="dropdown-item" to="/">Something else here</Link></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        
-                        <h5><MailOutlineIcon className="icon-color"/> support@evaly.com.bd</h5>
+
+                        <h5><MailOutlineIcon className="icon-color" /> support@evaly.com.bd</h5>
                     </div>
                 </div>
             </nav>

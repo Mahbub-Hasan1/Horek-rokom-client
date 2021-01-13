@@ -6,10 +6,25 @@
     margin-right: 20px;
     font-family: 'Fredoka One', cursive;
     font-size: 30px;
-    color: rgb(255, 51, 0) !important;
+    color: #fff !important;
 }
 .nav-first-icon-div{
     display: none;
+}
+.sidebar-icon{
+    display: none;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.navbar-top{
+    background:#DB0036
+}
+.navbar-bottom{
+    background-color: rgb(182, 18, 18);
+    color: #fff;
+}
+.nav-link{
+    color: #fff !important;
 }
 @media only screen and (max-width: 989px) {
     .nav-first-icon-div{
@@ -20,6 +35,9 @@
     }
     .navbar-bottom{
         display: none;
+    }
+    .sidebar-icon{
+        display: block;
     }
 }
   
@@ -40,11 +58,17 @@
 }
 
 .search-input{
-    border: 1px solid #C9151B;
+    border: 2px solid #FFE138;
     font-weight: bold;
 }
 .search-icon{
-    background-color: #C9151B;
-    color: #fff;
+    background-color: #FFE138;
+    color: #DB0036;
     cursor: pointer;
+}
+.sidebar-icon-bottom{
+    cursor: pointer;
+}
+.sidebar-icon-bottom:hover{
+    color: #fff;
 }

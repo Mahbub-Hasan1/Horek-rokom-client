@@ -1,13 +1,15 @@
 import React from 'react';
+import './Home.css';
 import Navbar from '../ShareComponents/Navbar/Navbar';
+import AllProducts from './AllProducts/AllProducts';
+
 
 const Home = () => {
+
     return (
         <>
             <Navbar />
-            <div style={{background:'red'}}>
-                <h1>This is Home page</h1>
-            </div>
+            <AllProducts />
         </>
     );
 };
